@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profgunther</title>
+    <style>
+        :root {
+            --azul-fundo: #A2D2FF; 
+            --azul-fonte: #4A90E2; 
+            --branco: #ffffff;
+        }
+
+        body {
+            background-color: var(--azul-fundo);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;    
+            justify-content: center; 
+            height: 100vh;
+        }
+
+        /* Caixa do Logo - Ajustada para alinhar o rosto maior */
+        .caixa-logo {
+            background-color: var(--branco);
+            padding: 20px 40px; /* Aumentei um pouco o respiro interno */
+            display: flex; 
+            align-items: center;
+            margin-bottom: 20px; 
+            border-radius: 6px; 
+            box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+        }
+
+        .caixa-branca {
+            background-color: var(--branco);
+            padding: 15px 35px;
+            display: inline-block;
+            margin-bottom: 20px; 
+            border-radius: 6px; 
+            box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .logo-text {
+            color: var(--azul-fonte); 
+            font-family: "Arial Black", Gadget, sans-serif;
+            font-weight: 900;
+            font-style: italic;
+            font-size: 4.5rem; 
+            text-transform: lowercase;
+            letter-spacing: -3px;
+            margin: 0;
+            line-height: 1;
+        }
+
+        /* Alterações na Foto: Sem borda e maior */
+        .foto-perfil {
+            width: 110px;  /* Aumentado de 80px para 110px */
+            height: 110px; /* Aumentado de 80px para 110px */
+            border-radius: 50%; 
+            border: none;      /* REMOVIDO o anel/borda azul */
+            margin-left: 20px; 
+            object-fit: cover;
+            background-color: transparent; /* Garante que não haja fundo extra */
+        }
+
+        .info-text {
+            color: var(--azul-fonte);
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-size: 1.8rem;
+            margin: 0;
+            text-transform: lowercase;
+        }
+
+        .link-contato {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .link-contato:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="caixa-logo">
+        <h1 class="logo-text">profgunther</h1>
+        <img src="foto-prof.png" alt="Prof Gunther" class="foto-perfil">
+    </div>
+
+    <div class="caixa-branca">
+        <p class="info-text">idiomas e informática</p>
+    </div>
+
+    <div class="caixa-branca">
+        <p class="info-text">
+            <a href="https://www.instagram.com/profgunther/" class="link-contato">fale com o prof</a>
+        </p>
+    </div>
+
+</body>
+</html>
